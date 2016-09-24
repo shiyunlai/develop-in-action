@@ -5,5 +5,4 @@
 * git clone https://github.com/shiyunlai/develop-in-action.git
 * mvn eclipse:eclipse
 * import int to eclipse
-* 找到并运行工程中的单元测试类
-* 每个工程也有对应的README
+* 找到并运行工程中的单元测试类 src/test/java/**/Test*.java
