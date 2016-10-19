@@ -206,7 +206,7 @@
                         </connector>
                     </connectors>
                     <webAppConfig>
-                        <contextPath>/SpringMVCDemo</contextPath>
+                        <contextPath>/springmvc</contextPath>
                     </webAppConfig>
                 </configuration>
             </plugin>
