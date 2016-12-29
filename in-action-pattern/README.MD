@@ -17,7 +17,7 @@
 	
 ### Demo3 常规构造者模式
 	
-	![Demo3](./develop-in-action/img/BuilderPatternDemo3.png "Demo3 UML")	
+	![Demo3](./in-action-pattern/img/BuilderPatternDemo3.png "Demo3 UML")	
 	
 	见： 	org.syl.inaction.pattern.builder.demo3.*.java
 	
