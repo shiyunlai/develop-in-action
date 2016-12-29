@@ -48,6 +48,12 @@
 		<property name="maxIdle" value="100" />
 	</bean>
 
+	<!-- 
+	使用
+	
+	@Autowired
+	JedisCluster jedisCluster ;
+	 -->
 	<bean id="jedisCluster" class="org.syl.tryredis.cluster.JedisClusterFactory">
 		<property name="addressConfig">
 			<value>classpath:cache/connect-redis.properties</value>
