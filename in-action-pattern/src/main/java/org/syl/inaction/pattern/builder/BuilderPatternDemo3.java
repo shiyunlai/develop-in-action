@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.syl.inaction.pattern;
+package org.syl.inaction.pattern.builder;
 
 import org.syl.inaction.pattern.builder.demo3.Builder;
 import org.syl.inaction.pattern.builder.demo3.Director;

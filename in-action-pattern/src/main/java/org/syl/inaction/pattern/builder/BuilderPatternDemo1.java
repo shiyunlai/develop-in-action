@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.syl.inaction.pattern;
+package org.syl.inaction.pattern.builder;
 
 import org.syl.inaction.pattern.builder.demo1.InsuranceContract;
 
