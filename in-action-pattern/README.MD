@@ -36,3 +36,46 @@
 	![Demo3](./img/BuilderPatternDemo3.png "Builder Pattern UML")
 
 	org.syl.inaction.pattern.builder.demo3.*.java
+
+	
+-------
+
+## 装饰者模式（Decorator Pattern）
+	
+	装饰模式又名包装(Wrapper)模式。装饰模式以对客户端透明的方式扩展对象的功能，是继承关系的一个替代方案。
+	
+	参考：http://www.cnblogs.com/java-my-life/archive/2012/04/20/2455726.html#3584678
+	
+	典型UML：
+	![装饰着模式UML](/img/DecoratorPattern.png "")
+	
+	精炼UML：
+	![装饰着模式UML simple](/img/DecoratorPattern-Simple.png "")
+	
+### Demo1 装饰者模式
+
+	org.syl.inaction.pattern.decorator.demo1
+	
+-------
+
+## 适配器模式（Adapter Pattern）
+	
+	模式定义：适配器模式把一个类的接口变换成客户端所期待的另一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作。
+	
+	类适配器模式 UML：
+	![适配器模式UML](/img/AdapterPattern.png "")
+	
+	
+	
+	
+### 适配器模式 Demo1 
+	
+	
+	
+	
+	
+	
+
+
+
+
