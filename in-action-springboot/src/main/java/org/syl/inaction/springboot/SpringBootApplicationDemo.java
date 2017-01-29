@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </pre>
  *
  */
-@SpringBootApplication
+@SpringBootApplication   //@SpringBootApplication 只需要使用一次,建议在主启动类上
 @RestController()
 @RequestMapping("/f")
 public class SpringBootApplicationDemo
@@ -53,6 +53,10 @@ public class SpringBootApplicationDemo
 		return "你注册成功:" + name;
 	}
 	
+	@GetMapping("/exhandler") 
+	public void testExceptionHandler(){
+		int a = 1/0 ;
+	}
 	
 	/*
 	 * 启动：
