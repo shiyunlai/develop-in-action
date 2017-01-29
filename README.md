@@ -6,8 +6,8 @@
   1. git clone https://github.com/shiyunlai/develop-in-action.git
   1. 获得项目，每个in-action-*是一个独立的maven工程
   1. 进入项目目录执行编译
-    mvn eclipse:eclipse
-    导入eclipse
+        mvn eclipse:eclipse
+        导入eclipse
 
 # project description
 
