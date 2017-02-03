@@ -11,7 +11,7 @@
 
 # project description
 
-* in-action-pattern  对设计模式的学习整理
+* [in-action-pattern](./in-action-pattern/README.MD)  对设计模式的学习整理
 * in-action-redis  对redis知识及使用方式的示意例子
 * in-action-springmvc 对Spring MVC知识点收集及开发示意
 * in-action-springboot 对Spring boot的学习整理

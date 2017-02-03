@@ -1,19 +1,7 @@
 # 5分钟模仿设计模式
 -------
 
-## 观察者模式（Observer Pattern）
-
-### Demo1 认识观察者模式结构
-
-![Demo1](./img/ObservePattern.png "Observer Pattern UML")
-
-	org.syl.inaction.pattern.oberver.ObserverPatternDemo1.java
-	org.syl.inaction.pattern.oberver.demo1.*.java
-
-### Demo2 基于jdk接口的观察者模式
-
-	org.syl.inaction.pattern.oberver.ObserverPatternDemo2.java
-	org.syl.inaction.pattern.oberver.demo2.*.java
+## [观察者模式（Observer Pattern）](./readme/ObserverPattern.md)
 
 -------
 
@@ -104,15 +92,9 @@
 ![ChainDemo1](./img/ChainOfResponsibilityDemo1UML.png "Chain of Responsibility Pattern")
 
 ### 我在什么场景使用过责任链模式！？
-	
+
 	场景1:...
-	
+
 -------
 
 ## [XXXX模式](./readme/test.md)
-
-
-	
-	
-	
-	
