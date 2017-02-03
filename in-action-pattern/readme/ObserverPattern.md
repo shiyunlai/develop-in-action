@@ -1,8 +1,8 @@
 ## 观察者模式（Observer Pattern）
 
-### Demo1 认识观察者模式结构
+![Demo1](../img/ObservePattern.png "Observer Pattern UML")
 
-![Demo1](./img/ObservePattern.png "Observer Pattern UML")
+### Demo1 认识观察者模式结构
 
 	org.syl.inaction.pattern.oberver.ObserverPatternDemo1.java
 	org.syl.inaction.pattern.oberver.demo1.*.java
