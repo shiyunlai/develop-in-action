@@ -6,3 +6,4 @@
 ## [装饰者模式（Decorator Pattern）](./readme/DecoratorPattern.md)
 ## [适配器者模式（Adapter Pattern）](./readme/AdapterPattern.md)
 ## [责任链模式（Chain of Responsibility Pattern）](./readme/ChainOfResponsibilityPattern.md)
+## [代理模式（Proxy Pattern）](./readme/ProxyPattern.md)
