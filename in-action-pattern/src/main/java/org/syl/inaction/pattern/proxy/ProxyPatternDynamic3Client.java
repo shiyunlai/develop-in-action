@@ -25,11 +25,23 @@ public class ProxyPatternDynamic3Client {
 		// 模拟得到交易引擎 
 		ITXEngine realTXEngine = new TXEngineDefault();
 		
+		
+		//TODO 根据参数配置获取对应的交易引擎代理
+		
 		ITXEngine proxyTXEngine = DynamicProxy.createOverrideTXEngineProxy(realTXEngine) ; //得到带有授权控制的交易引擎
+		
 		ITXEngine proxycAoTXEngine = DynamicProxy.createCheckTXEngineProxy(proxyTXEngine); //得到先复核再授权的交易引擎
 		
 		//
 		TXOprRequest commitReq = mockCommitTXRequest() ;
+		
+		// 模拟服务端识别
+		if( commitReq.getOprFunCode().equals( "commit" ) ){
+			realTXEngine.commitTX(commitReq) ;
+			proxyTXEngine.commitTX(commitReq) ;
+		}
+		
+		
 		TXOprResult res = proxyTXEngine.commitTX(commitReq) ;
 		System.out.println("提交交易处理结果:"+res);
 		

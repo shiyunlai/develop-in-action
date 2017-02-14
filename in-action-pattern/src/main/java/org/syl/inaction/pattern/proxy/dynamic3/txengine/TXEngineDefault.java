@@ -19,6 +19,10 @@ public class TXEngineDefault implements ITXEngine {
 		System.out.println("\n\n"+TXEngineDefault.class.getName()+" commitTX is doing ...");
 		System.out.println("提交交易： "+ txRequest);
 		
+		//交易控制
+		
+		//交易事件
+		
 		TXOprResult r = new TXOprResult() ; 
 		r.setBizSucc(true);
 		r.setRetCode("00000");
