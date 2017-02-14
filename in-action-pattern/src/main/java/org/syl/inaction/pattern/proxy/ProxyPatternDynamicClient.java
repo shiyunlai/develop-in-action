@@ -6,7 +6,6 @@ package org.syl.inaction.pattern.proxy;
 import java.lang.reflect.InvocationHandler;
 
 import org.syl.inaction.pattern.proxy.dynamic.ConcreteSubject;
-import org.syl.inaction.pattern.proxy.dynamic.DynamicProxy;
 import org.syl.inaction.pattern.proxy.dynamic.ISubject;
 import org.syl.inaction.pattern.proxy.dynamic.MyInvocationHandler;
 

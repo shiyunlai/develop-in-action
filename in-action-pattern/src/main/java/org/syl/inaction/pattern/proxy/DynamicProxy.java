@@ -1,10 +1,16 @@
 /**
  * 
  */
-package org.syl.inaction.pattern.proxy.dynamic;
+package org.syl.inaction.pattern.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
+
+import org.syl.inaction.pattern.proxy.dynamic.ISubject;
+import org.syl.inaction.pattern.proxy.dynamic.MyInvocationHandler;
+import org.syl.inaction.pattern.proxy.dynamic3.bizadvice.CheckInvocationHandler;
+import org.syl.inaction.pattern.proxy.dynamic3.bizadvice.OverrideInvocationHandler;
+import org.syl.inaction.pattern.proxy.dynamic3.txengine.ITXEngine;
 
 
 /**
@@ -44,6 +50,44 @@ public class DynamicProxy{
 		InvocationHandler handler = new MyInvocationHandler(subject);
 		
 		T t = newProxyInstance(classLoader, interfaces, handler);
+		return t;
+	}
+	
+	
+	/**
+     * 创建具备授权检查功能的交易引擎
+     * @param txEngine 交易引擎
+     * @return 交易引擎 {@link ITXEngine}
+     */
+	public static <T> T createOverrideTXEngineProxy(ITXEngine txEngine) {
+
+		ClassLoader classLoader = txEngine.getClass().getClassLoader();
+		Class<?>[] interfaces = txEngine.getClass().getInterfaces();
+		
+		//特定意义的代理过程
+		InvocationHandler handler = new OverrideInvocationHandler(txEngine);
+		
+		T t = newProxyInstance(classLoader, interfaces, handler);
+		
+		return t;
+	}
+	
+	
+	/**
+	 * 创建具备授权检查功能的交易引擎
+	 * @param txEngine 交易引擎
+	 * @return 交易引擎 {@link ITXEngine}
+	 */
+	public static <T> T createCheckTXEngineProxy(ITXEngine txEngine) {
+		
+		ClassLoader classLoader = txEngine.getClass().getClassLoader();
+		Class<?>[] interfaces = txEngine.getClass().getInterfaces();
+		
+		//特定意义的代理过程
+		InvocationHandler handler = new CheckInvocationHandler(txEngine);
+		
+		T t = newProxyInstance(classLoader, interfaces, handler);
+		
 		return t;
 	}
 

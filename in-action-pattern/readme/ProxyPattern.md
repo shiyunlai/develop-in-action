@@ -20,7 +20,11 @@
 	解释了代理的基本原理！
 	参考： http://www.cnblogs.com/forlina/archive/2011/06/21/2085831.html
 
-
+### Spring AOP 
+	
+	参考： 
+![AOP之方法级拦截](http://www.cnblogs.com/xing901022/p/4143696.html "")
+	
 
 
 
