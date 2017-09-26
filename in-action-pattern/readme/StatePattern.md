@@ -28,3 +28,7 @@
 
 ## 认识状态模式
 
+![认识状态模式1](../img/StatePattern-1.png "认识状态模式")
+![认识状态模式2](../img/StatePattern-2.png "认识状态模式")
+
+
