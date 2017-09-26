@@ -15,3 +15,4 @@
 * in-action-redis  对redis知识及使用方式的示意例子
 * [in-action-springboot](./in-action-springboot/README.MD) 对Spring boot的学习整理
 * [in-action-springmvc](./in-action-springmvc/README.MD) 对Spring MVC知识点收集及开发示意
+* [in-action-executor](./in-action-executor/README.MD) 实践java多线程中的特性，以及使用场景举例
